@@ -1,0 +1,685 @@
+body {
+    background-color: #7F1734; /* Claret background color */
+    color: white;
+    font-family: 'DM Sans', sans-serif;
+    border-radius: 20px;
+}
+
+.navbar {
+    background-color: transparent;
+    margin-top: 20px; /* Add margin to the top */
+    color:white;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    margin-left: 10px;
+    font-size: 28px; /* Increase the font size */
+    color: white; /* Ensure the text color contrasts well */
+    font-family: 'Arial', sans-serif; /* Change to a more prominent font */
+    letter-spacing: 1px; /* Optional: Add some space between letters */
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    border: 1px solid white; /* Single border around all elements */
+    border-radius: 26px;
+    padding: 5px 15px;
+    width: 11cm; /* Rounded border width set to 11cm */
+    color: white;
+}
+
+
+.navbar-nav .nav-link {
+    margin-right: 10px;
+    text-transform: uppercase;
+    color: white;
+    padding: 5px 10px; /* Add padding for better spacing */
+    border-radius: 15px; /* Rounded edges */
+    transition: all 0.3s ease; /* Smooth transition for background and color */
+}
+/* hovering code */
+.navbar-nav .nav-link:hover {
+    background-color: #9B2E4F; /* Muted Rose Red */
+    color: #FFFFFF; /* White text for best contrast */
+}
+
+
+
+.btn-book {
+    background-color: #E8D8C5;
+    color:  #7F1734;
+    font-weight: bold;
+    border-radius: 20px;
+    margin-right: 10px;
+    text-transform: uppercase; /* Make button text uppercase */
+    height: 42px; /* Set a specific height for consistency */
+    display: flex;
+    align-items: center; /* Center text vertically */
+    padding: 0 15px; /* Add horizontal padding */
+}
+
+.btn-arrow {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #E8D8C5; /* Set background color to white */
+    border: 2px solid #7F1734;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #7F1734; /* Change arrow color to match text */
+}
+
+
+
+.btn-arrow i {
+    transform: rotate(45deg); /* Rotate the arrow 45 degrees to face up-right */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.btn-arrow:hover i {
+    transform: rotate(45deg) scale(1.1); /* Slightly enlarge on hover for emphasis */
+}
+
+/* modal styling */
+/* Modal Content Styling */
+.modal-content {
+    border-radius: 12px;
+    background-color: white; /* White background for the form */
+    border: none; /* No border for a cleaner look */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+    border-bottom: none; /* Remove default border */
+}
+
+.modal-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #7F1734; /* Hands of Sympathy heading color */
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+.modal-body h5 {
+    color: #7F1734; /* Subheading color */
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Input Field Styling */
+.form-control {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: white; /* White input fields */
+    color: #000;
+}
+
+.form-control::placeholder {
+    color: #aaa; /* Light gray placeholder text */
+}
+
+/* Button Styling */
+.modal-footer .btn {
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.modal-footer .btn-secondary {
+    background-color: white;
+    color: #7F1734; /* Close button color */
+    border: 2px solid #7F1734;
+}
+
+.modal-footer .btn-secondary:hover {
+    background-color: #f8f8f8;
+}
+
+.modal-footer .btn-primary {
+    background-color: #7F1734;
+    color: white;
+    border: none;
+}
+
+.modal-footer .btn-primary:hover {
+    background-color: #6B122E; /* Slightly darker on hover */
+}
+
+
+
+
+
+
+
+.content-container {
+    margin-top: 3.7cm; /* Home page content positioned 3.7cm away from navbar */
+}
+
+.left-content {
+    padding-left: 0; /* Set left padding to 0 to push text further left */
+    margin-left: -1cm; /* Push text left by 4cm */
+    margin-top: 80px; /* Add margin-top to push the text down */
+    font-size: 18px;
+    text-align: left; /* Align text to the left */
+}
+
+.right-content {
+    text-align: right; /* Align text to the right */
+}
+
+.row {
+    justify-content: space-between; /* Distribute space between left and right content */
+}
+
+.right-content img {
+    max-width: 100%;
+    height: 500px; /* Keep increased height for the image */
+    object-fit: cover; /* Ensure image covers the container */
+    border-radius: 10px; /* Optional: rounded corners for the image */
+    margin-right: -10px; /* Optional: increase right margin for spacing */
+    
+}
+
+/* Custom CSS to adjust the width of the text area */
+.text-container {
+    max-width: 100%; /* Allow text to stretch fully */
+}
+
+/* Style for the h1 element */
+h1 {
+    font-size: 52px; /* Keep the font size large */
+    margin: 0; /* Remove default margins */
+}
+
+/* Button section styles */
+.button-section {
+    margin-top: 60px; /* Space between the homepage content and buttons */
+    text-align: center;
+}
+
+.button-section .btn {
+    display: block;
+    width: auto;
+    margin-bottom: 20px; /* Space between the buttons */
+    color: white;
+    background-color: #E8D8C5;
+    font-weight: bold;
+}
+
+
+.custom-card {
+border: none; /* Remove border for cleaner look */
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+border-radius: 20px; /* Match button's rounded corners */
+overflow: hidden; /* Ensure content doesn't overflow rounded corners */
+background-color: #ffffff; /* White background for contrast */
+color: #7F1734; /* Text color for better readability */
+
+}
+
+/* Custom styles for list items inside collapsible sections */
+.custom-list {
+    margin-top: 20px;
+    padding-left: 0;
+    list-style: none;
+}
+
+.custom-list .list-item {
+    position: relative;
+    padding-left: 30px; /* Add space for custom bullet */
+    margin-bottom: 12px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.custom-list .list-item:before {
+    content: '\2022'; /* Unicode bullet */
+    position: absolute;
+    left: 10px;
+    top: 0;
+    font-size: 30px;
+    color: #7F1734; /* Customize the color of the bullet */
+}
+
+/* Styling the collapsible content */
+.card-body {
+    padding: 25px 35px;
+    font-size: 16px; /* Make text more readable */
+}
+
+.card-body p {
+    margin-bottom: 15px;
+}
+
+/* Making the collapsible text more visually appealing */
+.card-body ul {
+    margin-top: 10px;
+}
+
+/* Increase the space between each item in the list */
+.custom-list .list-item {
+    margin-bottom: 10px;
+}
+
+.card-title {
+color: #7F1734; /* Keep card title color consistent */
+font-weight: bold;
+margin-bottom: 20px;
+}
+
+
+
+
+.swiper-container {
+    width: 100%;
+    height: 100vh; /* Full height */
+}
+
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;  /* Adjust slide width */
+}
+
+.swiper-container {
+    width: 100%;
+}
+
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 200px;  /* Smaller width for thumbnails */
+}
+
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.video {
+    width: 100%;
+    height: 200px;  /* Smaller video height */
+    object-fit: cover;
+}
+
+.play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    color: white;
+    display: block;
+}
+
+.video-card-bottom {
+    background-color: white;       /* White background for text */
+    padding: 10px;
+    border-radius: 0 0 10px 10px;  /* Rounded corners on bottom */
+    text-align: center;
+}
+
+.video-card-bottom h6 {
+    font-size: 14px;
+    margin: 0;
+    color: #800000;  /* Claret color for text */
+}
+
+.video-card-bottom p {
+    font-size: 12px;
+    color: #800000;  /* Claret color for text */
+}
+
+/* Footer styles */
+.footer-section {
+    background-color: black; /* Dark background color */
+    color: #7F1734; /* White text color */
+    border-radius: 25px;
+    padding: 20px;
+}
+
+.footer-heading {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.footer-section .form-control {
+    background-color: #444444; /* Slightly lighter background for form inputs */
+    border: none;
+    color: white;
+}
+
+.footer-section .form-control::placeholder {
+    color: white;
+}
+
+.footer-section .btn-book {
+    background-color: #7F1734; /* Use the specified button color */
+    color: #ffffff;
+}
+
+/* Social Media Links */
+.social-links {
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    list-style: none;
+}
+
+.social-links li {
+    margin: 0;
+}
+
+.social-links a {
+    color: white !important; /* Default color */
+    text-decoration: none;
+    font-size: 34px;
+    transition: color 0.3s ease-in-out;
+}
+
+.social-links li a:hover {
+    color: #7F1734 !important;
+}
+
+/* Separator Line */
+.footer-separator {
+    border: none;
+    border-top: 2px solid #7F1734 !important; /* Ensures it appears */
+    margin: 30px 0;
+    width: 100%; /* Ensures it spans full width */
+    opacity: 1; /* Fully visible */
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+.footer-section .col-md-4 {
+    margin-bottom: 30px; /* Add spacing between columns on smaller screens */
+}
+}
+
+
+/* Centering container and images */
+.image-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 170vh; /* Ensure the container takes full viewport height */
+    padding: 20px; /* Optional padding */
+}
+
+.image-container {
+    position: relative; /* Enable absolute positioning of children */
+    display: flex;
+    justify-content: center;
+    width: max-content; /* Adjust to the content width */
+    margin-left: 290px;
+}
+
+/* Positioning images */
+.left-image {
+    position: absolute; /* Position it on top of the right image */
+    left: -350px; /* Adjust left value to overlap the right image */
+    top: 0; /* Align at the top */
+    width: 100%;
+    max-width: 400px; /* Adjust max-width as needed */
+    height: 650px;
+    object-fit: cover;
+    border-radius: 26px;
+    z-index: 2; /* Ensure it stays on top of the right image */
+}
+
+.right-image {
+    position: relative; /* Keep it in normal flow */
+    width: 100%;
+    max-width: 400px; /* Adjust max-width as needed */
+    height: 650px;
+    object-fit: cover;
+    border-radius: 26px;
+    z-index: 1; /* Keep it behind the left image */
+}
+
+
+
+
+
+/* Custom Card Styling */
+.custom-card{
+    border: none; /* Remove border for cleaner look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    border-radius: 20px; /* Match button's rounded corners */
+    overflow: hidden; /* Ensure content doesn't overflow rounded corners */
+    background-color: #E8D8C5; /* White background for contrast */
+    color: #7F1734; /* Text color for better readability */
+}
+
+/* Icon Styling */
+.bi {
+    opacity: 0.9; /* Slightly transparent for a modern look */
+    transition: opacity 0.3s ease;
+}
+
+.bi:hover {
+    opacity: 1; /* Fully visible on hover */
+}
+
+/* Button Styling */
+.btn-book {
+    background-color: #E8D8C5; /* Light background color */
+    color: #6B122E; /* Dark text color */
+    border-radius: 15px;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+    overflow: hidden;
+    position: relative;
+}
+
+.btn-book span {
+    display: inline-block;
+    position: relative;
+}
+
+/* General Section Styling */
+.container h2 {
+    color: #7F1734;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+.demo {
+    background: #7F1734;
+    display: flex; /* Enable flexbox */
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    height: 100vh; /* Full viewport height for centering */
+    margin-left: 290px;
+}
+
+
+.testimonial {
+    margin: 50px 30px 30px 30px;
+    text-align: center;
+    position: relative;
+}
+
+
+.testimonial .description {
+    padding: 30px;
+    margin-bottom: 80px;
+    border-left: 1px solid #fff;
+    font-size: 15px;
+    color: #fff;
+    line-height: 33px;
+    position: relative;
+}
+
+
+.testimonial .description:before,
+.testimonial .description:after {
+    content: "";
+    width: 20%;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.testimonial .description:after {
+    top: auto;
+    bottom: 0;
+}
+
+.testimonial .title {
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0 0 15px 0;
+    position: relative;
+}
+
+.testimonial:before,
+.testimonial .title:before {
+    content: "";
+    width: 1px;
+    height: 50px;
+    background: #fff;
+    margin: 0 auto;
+    position: absolute;
+    top: -50px;
+    left: 0;
+    right: 0;
+}
+
+.testimonial .title:before {
+    top: -80px;
+}
+
+.testimonial .pic {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+
+.testimonial .pic img {
+    width: 100%;
+    height: auto;
+}
+
+.owl-theme .owl-controls {
+    margin-top: 0;
+}
+
+.owl-theme .owl-controls .owl-page span {
+    width: 10px;
+    height: 10px;
+    border-radius: 0;
+    background: #000;
+    outline: 2px solid #000;
+    outline-offset: 2px;
+    margin-right: 8px;
+    opacity: 0.7;
+    transition: all 0.3s ease 0s;
+}
+
+.owl-theme .owl-controls .owl-page.active span {
+    background: #fff;
+    outline: 2px solid #fff;
+}
+
+
+
+
+
+.service-styles--list {
+    list-style: none;
+    padding-left: 20px;
+    position: relative;
+}
+.service-styles--list li {
+    opacity: 0;
+    transform: translateX(100px);
+    --bullet-y: -150px;
+    --bullet-opacity: 0;
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+.service-styles--list li::after {
+    content: "";
+    position: absolute;
+    background: #19325A;
+    top: 5px;
+    left: -15px;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    opacity: var(--bullet-opacity);
+    transform: translateY(var(--bullet-y));
+}
+
+
+
+
+
+
+/* Modern Toastr Styling */
+#toast-container > .toast {
+    background-color: #4D0E23 !important; /* Darker Claret for depth */
+    color: #E8D8C5 !important; /* Beige text */
+    border-radius: 10px !important;
+    padding: 15px 20px !important;
+    font-size: 16px !important;
+    font-weight: 500;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#toast-container > .toast-success {
+    background-color: #28a745 !important; /* Green */
+}
+
+#toast-container > .toast-error {
+    background-color: #dc3545 !important; /* Red */
+}
+
+#toast-container > .toast-info {
+    background-color: #17a2b8 !important; /* Blue */
+}
+
+#toast-container > .toast-warning {
+    background-color: #ffc107 !important; /* Yellow */
+}
+
+.toast-title {
+    font-size: 18px !important;
+    font-weight: bold;
+}
+
+.toast-message {
+    font-size: 15px !important;
+}
+
+.toast-close-button {
+    color: white !important;
+    font-size: 16px !important;
+}
